@@ -8,7 +8,7 @@
 <title>YOUTH MEMORY — 30살의 어느 봄날</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Noto+Serif+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 <style>
 :root {
@@ -24,7 +24,7 @@
   --accent: #c9a05e;
   --accent-2: #b85c3a;
 
-  --serif-ko: 'Nanum Myeongjo', 'Apple SD Gothic Neo', serif;
+  --serif-ko: 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
   --serif-en: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   --sans: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -42,7 +42,7 @@ body {
   padding-bottom: 140px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
 }
 
 /* Paper grain */
@@ -170,8 +170,8 @@ main {
 }
 .essay-body {
   font-family: var(--serif-ko);
-  font-size: 16.5px;
-  line-height: 1.95;
+  font-size: 17.5px;
+  line-height: 1.9;
   color: var(--text);
   word-break: keep-all;
 }
@@ -179,15 +179,14 @@ main {
 
 /* Drop cap */
 .essay-body p:first-child::first-letter {
-  font-family: var(--serif-en);
-  font-weight: 500;
+  font-family: var(--serif-ko);
+  font-weight: 900;
   float: left;
-  font-size: 5.2em;
-  line-height: 0.85;
-  padding: 0.05em 0.12em 0 0;
-  margin-top: 0.12em;
+  font-size: 4.6em;
+  line-height: 0.9;
+  padding: 0.08em 0.12em 0 0;
+  margin-top: 0.1em;
   color: var(--accent-2);
-  font-style: italic;
 }
 
 .essay-end {
@@ -456,8 +455,8 @@ main {
 }
 .modal-message {
   font-family: var(--serif-ko);
-  font-size: 16px;
-  line-height: 1.95;
+  font-size: 16.5px;
+  line-height: 1.9;
   color: var(--text);
   white-space: pre-wrap;
   word-break: keep-all;
